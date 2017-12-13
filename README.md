@@ -4,7 +4,7 @@
 
 User application can query CPU features available to it through the HWCAP mechanism.
 
-See documentation at kernel.org (available [since v4.15-rc1][1]) for usage example as well as a complete list supported flags: [Documentation/arm64/elf_hwcaps.txt][1]
+See documentation at kernel.org (available [since v4.15-rc1][1]) for usage example as well as a complete list of supported flags: [Documentation/arm64/elf_hwcaps.txt][1]
 
 This interface has been available in arm64 port of Linux since [v3.7][3]:
 ```
@@ -18,6 +18,8 @@ Date:   Mon Mar 5 11:49:30 2012 +0000
     personality setting and EXEC_PAGESIZE. The are only two hwcap
     definitions for 64-bit applications - HWCAP_FP and HWCAP_ASIMD.
 ```
+
+An example application `hwcap` is provided in this [repository](https://github.com/zlim/arm64/commit/8701c3b93ad28172b8b32f742ce5cb04bb426c8b).
 
 [1]: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/arm64/elf_hwcaps.txt
 [2]: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=611a7bc74ed2dcbab6693c20bb534cfcf15f9d1d
